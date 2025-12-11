@@ -4,16 +4,11 @@
 <listeners>
 <listener class-name="Utilities.SuiteListener"></listener>
 </listeners>
-  <test thread-count="5" name="Test">
-  <parameter name="browser" value="chrome"></parameter>
+  <test name="Regression">
+  <parameter name="browser" value="chrome"/>
   <classes>
-  <class name="qaTest.TestCase01"/>
-  </classes>
-  </test>
-  <test thread-count="5" name="Firefox">
-  <parameter name="browser" value="firefox"></parameter>
-  <classes>
-  <class name="qaTest.TestCase01"/>
+  <class name="qaTest.LoginTests"/>
+  <class name="qaTest.SearchTests"/>
   </classes>
   </test>
 </suite> <!-- Suite -->
