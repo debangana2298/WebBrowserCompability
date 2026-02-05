@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,45 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 2 failed,  2 skipped,  4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="qaTest.TestCase01" class="method navigator-link" hash-for-method="EnteringCredentials">EnteringCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="qaTest.TestCase01" class="method navigator-link" hash-for-method="EnteringCredentials">EnteringCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Retried methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="qaTest.TestCase01" class="method navigator-link" hash-for-method="EnteringCredentials">EnteringCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="qaTest.TestCase01" class="method navigator-link" hash-for-method="EnteringCredentials">EnteringCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -141,22 +103,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="qaTest.TestCase01" class="method navigator-link" hash-for-method="Crdentials">Crdentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="qaTest.SearchTests" class="method navigator-link" hash-for-method="searchChicken">searchChicken</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="qaTest.TestCase01" class="method navigator-link" hash-for-method="Crdentials">Crdentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="qaTest.TestCase01" class="method navigator-link" hash-for-method="verification">verification</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="qaTest.TestCase01" class="method navigator-link" hash-for-method="verification">verification</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="qaTest.LoginTests" class="method navigator-link" hash-for-method="validLoginTest">validLoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -171,134 +123,32 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">qaTest.TestCase01</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="EnteringCredentials">
-                  </a> <!-- EnteringCredentials -->
-                  <span class="method-name">EnteringCredentials</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //inpu[@id=&apos;ap_email_login&apos;] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\DEBANG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56010/devtoo..., se:cdpVersion: 140.0.7339.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2bb50a346a03029cdc5c655e41a6572e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageEvents.LoginPageEvents.signIn(LoginPageEvents.java:24)
-	at qaTest.TestCase01.EnteringCredentials(TestCase01.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="EnteringCredentials">
-                  </a> <!-- EnteringCredentials -->
-                  <span class="method-name">EnteringCredentials</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //inpu[@id=&apos;ap_email_login&apos;] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21932, moz:profile: C:\Users\DEBANG~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 965beccf-c541-4e35-8cce-313ef47c1979
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageEvents.LoginPageEvents.signIn(LoginPageEvents.java:24)
-	at qaTest.TestCase01.EnteringCredentials(TestCase01.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">qaTest.TestCase01</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="EnteringCredentials">
-                  </a> <!-- EnteringCredentials -->
-                  <span class="method-name">EnteringCredentials</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //inpu[@id=&apos;ap_email_login&apos;] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\DEBANG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55950/devtoo..., se:cdpVersion: 140.0.7339.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6e4dbd5d8f2dd56b9beaa3b4b998d2c6
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageEvents.LoginPageEvents.signIn(LoginPageEvents.java:24)
-	at qaTest.TestCase01.EnteringCredentials(TestCase01.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="EnteringCredentials">
-                  </a> <!-- EnteringCredentials -->
-                  <span class="method-name">EnteringCredentials</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //inpu[@id=&apos;ap_email_login&apos;] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0.1, moz:accessibilityChecks: false, moz:buildID: 20250827004350, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29124, moz:profile: C:\Users\DEBANG~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 3e6249fa-6040-4b01-bcb5-e513d62fc464
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageEvents.LoginPageEvents.signIn(LoginPageEvents.java:24)
-	at qaTest.TestCase01.EnteringCredentials(TestCase01.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">qaTest.TestCase01</span>
+              <span class="class-name">qaTest.LoginTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Crdentials">
-                  </a> <!-- Crdentials -->
-                  <span class="method-name">Crdentials</span>
+                  <a name="validLoginTest">
+                  </a> <!-- validLoginTest -->
+                  <span class="method-name">validLoginTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">qaTest.SearchTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Crdentials">
-                  </a> <!-- Crdentials -->
-                  <span class="method-name">Crdentials</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verification">
-                  </a> <!-- verification -->
-                  <span class="method-name">verification</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verification">
-                  </a> <!-- verification -->
-                  <span class="method-name">verification</span>
+                  <a name="searchChicken">
+                  </a> <!-- searchChicken -->
+                  <span class="method-name">searchChicken</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -316,18 +166,13 @@ Session ID: 3e6249fa-6040-4b01-bcb5-e513d62fc464
   &lt;listeners&gt;
     &lt;listener class-name=&quot;Utilities.SuiteListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;qaTest.TestCase01&quot;/&gt;
+      &lt;class name=&quot;qaTest.LoginTests&quot;/&gt;
+      &lt;class name=&quot;qaTest.SearchTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Firefox&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;qaTest.TestCase01&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Firefox --&gt;
+  &lt;/test&gt; &lt;!-- Regression --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -339,10 +184,7 @@ Session ID: 3e6249fa-6040-4b01-bcb5-e513d62fc464
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Firefox (1 class)</span>
+                <span class="test-name">Regression (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -368,44 +210,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'EnteringCredentials')
-data.setCell(0, 2, 'qaTest.TestCase01')
-data.setCell(0, 3, 41325);
+data.setCell(0, 1, 'searchChicken')
+data.setCell(0, 2, 'qaTest.SearchTests')
+data.setCell(0, 3, 38961);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'EnteringCredentials')
-data.setCell(1, 2, 'qaTest.TestCase01')
-data.setCell(1, 3, 41143);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verification')
-data.setCell(2, 2, 'qaTest.TestCase01')
-data.setCell(2, 3, 26806);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Crdentials')
-data.setCell(3, 2, 'qaTest.TestCase01')
-data.setCell(3, 3, 26579);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'EnteringCredentials')
-data.setCell(4, 2, 'qaTest.TestCase01')
-data.setCell(4, 3, 23868);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'EnteringCredentials')
-data.setCell(5, 2, 'qaTest.TestCase01')
-data.setCell(5, 3, 23115);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verification')
-data.setCell(6, 2, 'qaTest.TestCase01')
-data.setCell(6, 3, 7801);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Crdentials')
-data.setCell(7, 2, 'qaTest.TestCase01')
-data.setCell(7, 3, 5024);
+data.setCell(1, 1, 'validLoginTest')
+data.setCell(1, 2, 'qaTest.LoginTests')
+data.setCell(1, 3, 19040);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 58 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -420,9 +238,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">qaTest.SearchTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupExtent</span>
+                <br/>
+                <span class="ignored-method-name">tearDownExtent</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -431,155 +258,45 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">qaTest.TestCase01</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTestMethod</span>
+              <div class="chronological-class-name">qaTest.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupExtent</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(chrome, public void qaTest.TestCase01.Crdentials())</span>
-                <span class="method-start">247 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">initPages</span>
-                <span class="method-start">3649 ms</span>
+                <span class="method-name">launchBrowser(chrome, public void qaTest.LoginTests.validLoginTest())</span>
+                <span class="method-start">322 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Crdentials</span>
-                <span class="method-start">3658 ms</span>
+                <span class="method-name">validLoginTest</span>
+                <span class="method-start">5268 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=Crdentials status=SUCCESS method=TestCase01.Crdentials()[pri:1, instance:qaTest.Tes...)</span>
-                <span class="method-start">8686 ms</span>
+                <span class="method-name">tearDown([TestResult name=validLoginTest status=SUCCESS method=LoginTests.validLoginTest()[pri:0, instance:qa...)</span>
+                <span class="method-start">24313 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">qaTest.SearchTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(chrome, public void qaTest.TestCase01.verification())</span>
-                <span class="method-start">8924 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">initPages</span>
-                <span class="method-start">11254 ms</span>
+                <span class="method-name">launchBrowser(chrome, public void qaTest.SearchTests.searchChicken())</span>
+                <span class="method-start">24953 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verification</span>
-                <span class="method-start">11255 ms</span>
+                <span class="method-name">searchChicken</span>
+                <span class="method-start">29524 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verification status=SUCCESS method=TestCase01.verification()[pri:2, instance:qaTest...)</span>
-                <span class="method-start">19057 ms</span>
+                <span class="method-name">tearDown([TestResult name=searchChicken status=SUCCESS method=SearchTests.searchChicken()[pri:0, instance:qaT...)</span>
+                <span class="method-start">68488 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(chrome, public void qaTest.TestCase01.EnteringCredentials())</span>
-                <span class="method-start">19312 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">initPages</span>
-                <span class="method-start">21874 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">EnteringCredentials</span>
-                <span class="method-start">21875 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=EnteringCredentials status=SKIP method=TestCase01.EnteringCredentials()[pri:3, inst...)</span>
-                <span class="method-start">45749 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(chrome, public void qaTest.TestCase01.EnteringCredentials())</span>
-                <span class="method-start">46010 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">EnteringCredentials</span>
-                <span class="method-start">48571 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">initPages</span>
-                <span class="method-start">48571 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=EnteringCredentials status=FAILURE method=TestCase01.EnteringCredentials()[pri:3, i...)</span>
-                <span class="method-start">71853 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">72088 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTestMethod</span>
-                <span class="method-start">72458 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(firefox, public void qaTest.TestCase01.Crdentials())</span>
-                <span class="method-start">72460 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">initPages</span>
-                <span class="method-start">78966 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Crdentials</span>
-                <span class="method-start">78966 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=Crdentials status=SUCCESS method=TestCase01.Crdentials()[pri:1, instance:qaTest.Tes...)</span>
-                <span class="method-start">105546 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(firefox, public void qaTest.TestCase01.verification())</span>
-                <span class="method-start">108931 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verification</span>
-                <span class="method-start">113764 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">initPages</span>
-                <span class="method-start">113764 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verification status=SUCCESS method=TestCase01.verification()[pri:2, instance:qaTest...)</span>
-                <span class="method-start">140571 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(firefox, public void qaTest.TestCase01.EnteringCredentials())</span>
-                <span class="method-start">143757 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">initPages</span>
-                <span class="method-start">148986 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">EnteringCredentials</span>
-                <span class="method-start">148986 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=EnteringCredentials status=SKIP method=TestCase01.EnteringCredentials()[pri:3, inst...)</span>
-                <span class="method-start">190314 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(firefox, public void qaTest.TestCase01.EnteringCredentials())</span>
-                <span class="method-start">191254 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">initPages</span>
-                <span class="method-start">195589 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">EnteringCredentials</span>
-                <span class="method-start">195590 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=EnteringCredentials status=FAILURE method=TestCase01.EnteringCredentials()[pri:3, i...)</span>
-                <span class="method-start">236787 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">237909 ms</span>
-              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">qaTest.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownExtent</span>
+                <span class="method-start">69393 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

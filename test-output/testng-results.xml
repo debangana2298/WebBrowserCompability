@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-11T17:59:32 IST" name="Suite" finished-at="2025-12-11T18:00:41 IST" duration-ms="68985">
+    <groups>
+    </groups>
+    <test started-at="2025-12-11T17:59:32 IST" name="Regression" finished-at="2025-12-11T18:00:41 IST" duration-ms="68985">
+      <class name="qaTest.SearchTests">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.reflect.Method)[pri:0, instance:qaTest.SearchTests@3f191845]" started-at="2025-12-11T17:59:56 IST" name="launchBrowser" finished-at="2025-12-11T18:00:01 IST" duration-ms="4571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void qaTest.SearchTests.searchChicken()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="searchChicken()[pri:0, instance:qaTest.SearchTests@3f191845]" started-at="2025-12-11T18:00:01 IST" name="searchChicken" finished-at="2025-12-11T18:00:40 IST" duration-ms="38961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchChicken -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qaTest.SearchTests@3f191845]" started-at="2025-12-11T18:00:40 IST" name="tearDown" finished-at="2025-12-11T18:00:41 IST" duration-ms="785" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchChicken status=SUCCESS method=SearchTests.searchChicken()[pri:0, instance:qaTest.SearchTests@3f191845] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- qaTest.SearchTests -->
+      <class name="qaTest.LoginTests">
+        <test-method is-config="true" signature="setupExtent()[pri:0, instance:qaTest.LoginTests@1349883]" started-at="2025-12-11T17:59:32 IST" name="setupExtent" finished-at="2025-12-11T17:59:32 IST" duration-ms="289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExtent -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.reflect.Method)[pri:0, instance:qaTest.LoginTests@1349883]" started-at="2025-12-11T17:59:32 IST" name="launchBrowser" finished-at="2025-12-11T17:59:37 IST" duration-ms="4946" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void qaTest.LoginTests.validLoginTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validLoginTest()[pri:0, instance:qaTest.LoginTests@1349883]" started-at="2025-12-11T17:59:37 IST" name="validLoginTest" finished-at="2025-12-11T17:59:56 IST" duration-ms="19040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qaTest.LoginTests@1349883]" started-at="2025-12-11T17:59:56 IST" name="tearDown" finished-at="2025-12-11T17:59:56 IST" duration-ms="637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLoginTest status=SUCCESS method=LoginTests.validLoginTest()[pri:0, instance:qaTest.LoginTests@1349883] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownExtent()[pri:0, instance:qaTest.LoginTests@1349883]" started-at="2025-12-11T18:00:41 IST" name="tearDownExtent" finished-at="2025-12-11T18:00:41 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownExtent -->
+      </class> <!-- qaTest.LoginTests -->
+    </test> <!-- Regression -->
+  </suite> <!-- Suite -->
+</testng-results>

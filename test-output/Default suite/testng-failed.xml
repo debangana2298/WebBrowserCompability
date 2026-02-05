@@ -3,18 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="qaTest.TestCase01">
+      <class name="qaTest.SearchTests">
         <methods>
-          <include name="afterMethod"/>
-          <include name="verification"/>
-          <include name="beforeTestMethod"/>
-          <include name="initPages"/>
-          <include name="afterTest"/>
-          <include name="beforeMethodMethod"/>
-          <include name="Crdentials"/>
-          <include name="EnteringCredentials"/>
+          <include name="tearDown"/>
+          <include name="setupExtent"/>
+          <include name="tearDownExtent"/>
+          <include name="searchChicken"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- qaTest.TestCase01 -->
+      </class> <!-- qaTest.SearchTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
