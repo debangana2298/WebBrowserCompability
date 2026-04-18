@@ -18,7 +18,6 @@
 
     h1,h2,h3 { font-family:'Playfair Display', serif; }
 
-    /* NAVBAR */
     nav {
       display:flex;
       justify-content:space-between;
@@ -50,23 +49,19 @@
 
     section { padding:80px 8%; }
 
-    /* HERO SECTION */
     .hero {
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:40px;
+      max-width:900px;
+      margin:auto;
+      text-align:left;
     }
 
-    .hero-text { flex:1; }
-
-    .hero-text h1 {
+    .hero h1 {
       font-size:3rem;
       color:#3f3dbf;
       margin-bottom:20px;
     }
 
-    .hero-text p {
+    .hero p {
       font-size:1.1rem;
       line-height:1.6;
       margin-bottom:25px;
@@ -97,17 +92,12 @@
       color:white;
     }
 
-    .hero-img img {
-      width:420px;
-      border-radius:12px;
-      box-shadow:0 15px 40px rgba(0,0,0,0.15);
-    }
-
-    /* SUMMARY SECTION */
     .two-column {
       display:flex;
       gap:40px;
       align-items:flex-start;
+      max-width:1000px;
+      margin:auto;
     }
 
     .card {
@@ -127,18 +117,9 @@
 
     li { margin-bottom:10px; }
 
-    /* PROJECT SECTION */
-    .project-grid {
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:40px;
-      align-items:center;
-    }
-
-    .project-img img {
-      width:100%;
-      border-radius:12px;
-      box-shadow:0 15px 40px rgba(0,0,0,0.1);
+    .project-section {
+      max-width:900px;
+      margin:auto;
     }
 
     .section-title {
@@ -147,11 +128,12 @@
       color:#3f3dbf;
     }
 
-    /* CONTACT */
     .contact-grid {
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
       gap:25px;
+      max-width:900px;
+      margin:auto;
     }
 
     .contact-box {
@@ -170,8 +152,7 @@
     }
 
     @media(max-width:900px){
-      .hero, .two-column, .project-grid { flex-direction:column; display:flex; }
-      .hero-img img { width:100%; }
+      .two-column { flex-direction:column; }
     }
   </style>
 </head>
@@ -188,15 +169,10 @@
 </nav>
 
 <section class="hero">
-  <div class="hero-text">
-    <h1>Quality Assurance Engineer</h1>
-    <p>Specializing in Manual & Automation Testing, API Testing, and Defect Tracking. Building reliable, scalable Selenium automation frameworks for modern web applications.</p>
-    <a href="#contact" class="btn">Get In Touch</a>
-    <a href="https://linkedin.com" target="_blank" class="btn btn-outline">View LinkedIn</a>
-  </div>
-  <div class="hero-img">
-    <img src="https://images.unsplash.com/photo-1581091870627-3c8c6c7d5f63" alt="QA Illustration">
-  </div>
+  <h1>Quality Assurance Engineer</h1>
+  <p>Specializing in Manual & Automation Testing, API Testing, and Defect Tracking. Building reliable, scalable Selenium automation frameworks for modern web applications.</p>
+  <a href="#contact" class="btn">Get In Touch</a>
+  <a href="https://linkedin.com" target="_blank" class="btn btn-outline">View LinkedIn</a>
 </section>
 
 <section id="about">
@@ -220,22 +196,17 @@
 </section>
 
 <section id="project">
-  <h2 class="section-title">Web Browser Compatibility Automation</h2>
-  <div class="project-grid">
-    <div>
-      <p>Developed a scalable Selenium automation framework validating end-to-end e-commerce workflows including login, product search, cart, and checkout functionality.</p>
-      <ul>
-        <li>Cross-browser testing (Chrome, Edge, Firefox)</li>
-        <li>50+ automated test cases</li>
-        <li>Regression suite integration</li>
-        <li>Maven + TestNG setup</li>
-      </ul>
-      <br>
-      <a href="https://github.com/debangana2298/WebBrowserCompatibility" target="_blank" class="btn">View GitHub Repository</a>
-    </div>
-    <div class="project-img">
-      <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f" alt="Automation Project">
-    </div>
+  <div class="project-section">
+    <h2 class="section-title">Web Browser Compatibility Automation</h2>
+    <p>Developed a scalable Selenium automation framework validating end-to-end e-commerce workflows including login, product search, cart, and checkout functionality.</p>
+    <ul>
+      <li>Cross-browser testing (Chrome, Edge, Firefox)</li>
+      <li>50+ automated test cases</li>
+      <li>Regression suite integration</li>
+      <li>Maven + TestNG setup</li>
+    </ul>
+    <br>
+    <a href="https://github.com/debangana2298/WebBrowserCompatibility" target="_blank" class="btn">View GitHub Repository</a>
   </div>
 </section>
 
