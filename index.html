@@ -3,239 +3,263 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Debangana Biswas | Automation Portfolio</title>
+  <title>Debangana Biswas | QA Portfolio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+    * { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
 
     body {
-      font-family: 'Poppins', sans-serif;
-      background: #0f172a;
-      color: #f1f5f9;
+      font-family: 'Inter', sans-serif;
+      background:#f4f5f9;
+      color:#2d2d2d;
     }
 
-    /* Navbar */
+    h1,h2,h3 { font-family:'Playfair Display', serif; }
+
+    /* NAVBAR */
     nav {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      background: rgba(15, 23, 42, 0.95);
-      backdrop-filter: blur(10px);
-      padding: 15px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 8%;
+      background:white;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
     }
 
-    nav h2 {
-      color: #6366f1;
-      font-weight: 700;
-    }
+    nav h2 { color:#3f3dbf; }
 
     nav ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
+      list-style:none;
+      display:flex;
+      gap:30px;
     }
 
-    nav ul li a {
-      text-decoration: none;
-      color: #f1f5f9;
-      font-weight: 500;
-      transition: 0.3s;
+    nav a {
+      text-decoration:none;
+      color:#444;
+      font-weight:500;
+      transition:0.3s;
     }
 
-    nav ul li a:hover {
-      color: #6366f1;
-    }
+    nav a:hover { color:#3f3dbf; }
 
-    /* Hero Section */
+    section { padding:80px 8%; }
+
+    /* HERO SECTION */
     .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 20px;
-      background: linear-gradient(135deg, #1e293b, #0f172a);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:40px;
     }
 
-    .hero h1 {
-      font-size: 3rem;
-      color: #6366f1;
-      animation: fadeInDown 1s ease forwards;
+    .hero-text { flex:1; }
+
+    .hero-text h1 {
+      font-size:3rem;
+      color:#3f3dbf;
+      margin-bottom:20px;
     }
 
-    .hero p {
-      margin-top: 15px;
-      font-size: 1.2rem;
-      color: #cbd5e1;
-      animation: fadeInUp 1.2s ease forwards;
+    .hero-text p {
+      font-size:1.1rem;
+      line-height:1.6;
+      margin-bottom:25px;
     }
 
     .btn {
-      margin-top: 25px;
-      padding: 12px 25px;
-      background: #6366f1;
-      border: none;
-      border-radius: 30px;
-      color: white;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.3s;
-      text-decoration: none;
+      display:inline-block;
+      padding:12px 22px;
+      border-radius:6px;
+      background:#3f3dbf;
+      color:white;
+      text-decoration:none;
+      font-weight:500;
+      transition:0.3s;
     }
 
-    .btn:hover {
-      background: #4f46e5;
-      transform: scale(1.05);
+    .btn:hover { background:#2f2da3; }
+
+    .btn-outline {
+      background:transparent;
+      border:2px solid #3f3dbf;
+      color:#3f3dbf;
+      margin-left:10px;
     }
 
-    /* Sections */
-    section {
-      padding: 100px 50px;
-      max-width: 1100px;
-      margin: auto;
+    .btn-outline:hover {
+      background:#3f3dbf;
+      color:white;
     }
 
-    h2.section-title {
-      text-align: center;
-      margin-bottom: 50px;
-      font-size: 2rem;
-      color: #6366f1;
+    .hero-img img {
+      width:420px;
+      border-radius:12px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    /* SUMMARY SECTION */
+    .two-column {
+      display:flex;
+      gap:40px;
+      align-items:flex-start;
     }
 
     .card {
-      background: #1e293b;
-      padding: 25px;
-      border-radius: 15px;
-      margin-bottom: 25px;
-      transition: 0.4s;
-      opacity: 0;
-      transform: translateY(40px);
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.05);
+      flex:1;
+      transition:0.3s;
     }
 
-    .card.show {
-      opacity: 1;
-      transform: translateY(0);
+    .card:hover { transform:translateY(-5px); }
+
+    .card h3 { margin-bottom:15px; color:#3f3dbf; }
+
+    ul { padding-left:20px; }
+
+    li { margin-bottom:10px; }
+
+    /* PROJECT SECTION */
+    .project-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    .project-img img {
+      width:100%;
+      border-radius:12px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.1);
     }
 
-    ul {
-      padding-left: 20px;
-      margin-top: 10px;
+    .section-title {
+      font-size:2.2rem;
+      margin-bottom:40px;
+      color:#3f3dbf;
+    }
+
+    /* CONTACT */
+    .contact-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+    }
+
+    .contact-box {
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.05);
     }
 
     footer {
-      text-align: center;
-      padding: 30px;
-      background: #020617;
-      color: #94a3b8;
+      text-align:center;
+      padding:30px;
+      background:#e9eaf5;
+      margin-top:40px;
+      font-size:14px;
     }
 
-    /* Animations */
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media(max-width: 768px) {
-      nav { padding: 15px 20px; }
-      section { padding: 80px 20px; }
-      .hero h1 { font-size: 2rem; }
+    @media(max-width:900px){
+      .hero, .two-column, .project-grid { flex-direction:column; display:flex; }
+      .hero-img img { width:100%; }
     }
   </style>
 </head>
 
 <body>
 
-  <nav>
-    <h2>Debangana</h2>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#tech">Tech Stack</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav>
+  <h2>Debangana Biswas</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <div class="hero">
-    <h1>Automation Test Engineer</h1>
-    <p>Building Scalable Selenium Automation Frameworks</p>
-    <a href="#project" class="btn">View Project</a>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Quality Assurance Engineer</h1>
+    <p>Specializing in Manual & Automation Testing, API Testing, and Defect Tracking. Building reliable, scalable Selenium automation frameworks for modern web applications.</p>
+    <a href="#contact" class="btn">Get In Touch</a>
+    <a href="https://linkedin.com" target="_blank" class="btn btn-outline">View LinkedIn</a>
   </div>
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1581091870627-3c8c6c7d5f63" alt="QA Illustration">
+  </div>
+</section>
 
-  <section id="about">
-    <h2 class="section-title">About The Project</h2>
+<section id="about">
+  <h2 class="section-title">Professional Summary</h2>
+  <div class="two-column">
     <div class="card">
-      Designed and developed a scalable Selenium automation framework to validate end-to-end e-commerce workflows including login, search, cart, and checkout functionality.
+      <p>QA Engineer with 2+ years of experience delivering high-quality software through structured testing methodologies. Proven track record of identifying critical defects before release and improving system reliability.</p>
+      <p>Expertise in WBT, BBT, SDLC, STLC, Selenium, Java, SQL, and Agile environments.</p>
     </div>
-  </section>
-
-  <section id="project">
-    <h2 class="section-title">Test Coverage</h2>
     <div class="card">
+      <h3>Key Strengths</h3>
       <ul>
-        <li>Cross-browser testing (Chrome, Edge, Firefox)</li>
-        <li>User authentication validation</li>
-        <li>Product search and filtering</li>
-        <li>Add-to-cart and checkout flow</li>
-        <li>Regression suite execution</li>
+        <li>Agile team collaboration</li>
+        <li>Strong defect detection skills</li>
+        <li>Automation framework design (POM)</li>
+        <li>API & Regression Testing</li>
+        <li>Clear stakeholder communication</li>
       </ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="tech">
-    <h2 class="section-title">Tech Stack</h2>
-    <div class="card">
-      Java, Selenium WebDriver, TestNG, Maven, Page Object Model (POM)
+<section id="project">
+  <h2 class="section-title">Web Browser Compatibility Automation</h2>
+  <div class="project-grid">
+    <div>
+      <p>Developed a scalable Selenium automation framework validating end-to-end e-commerce workflows including login, product search, cart, and checkout functionality.</p>
+      <ul>
+        <li>Cross-browser testing (Chrome, Edge, Firefox)</li>
+        <li>50+ automated test cases</li>
+        <li>Regression suite integration</li>
+        <li>Maven + TestNG setup</li>
+      </ul>
+      <br>
+      <a href="https://github.com/debangana2298/WebBrowserCompatibility" target="_blank" class="btn">View GitHub Repository</a>
     </div>
-  </section>
-
-  <section id="contact">
-    <h2 class="section-title">GitHub</h2>
-    <div class="card">
-      <a class="btn" href="https://github.com/debangana2298/WebBrowserCompatibility" target="_blank">View Repository</a>
+    <div class="project-img">
+      <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f" alt="Automation Project">
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    © 2026 Debangana Biswas | Automation Portfolio
-  </footer>
+<section id="contact">
+  <h2 class="section-title">Let's Connect</h2>
+  <div class="contact-grid">
+    <div class="contact-box">
+      <h3>Phone</h3>
+      <p>9007529229</p>
+    </div>
+    <div class="contact-box">
+      <h3>Email</h3>
+      <p>debanganaabi@gmail.com</p>
+    </div>
+    <div class="contact-box">
+      <h3>LinkedIn</h3>
+      <p><a href="#">View Profile</a></p>
+    </div>
+  </div>
+</section>
 
-  <script>
-    const cards = document.querySelectorAll('.card');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('show');
-        }
-      });
-    }, { threshold: 0.2 });
-
-    cards.forEach(card => {
-      observer.observe(card);
-    });
-  </script>
+<footer>
+  © 2026 Debangana Biswas | QA Automation Portfolio
+</footer>
 
 </body>
 </html>
